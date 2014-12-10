@@ -14,11 +14,11 @@ DataStructure::LinkedList - simple implementation for using LinkedList data stru
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
@@ -94,8 +94,8 @@ Perhaps a little code snippet.
     # sort by name's length
     sub compare_to {
         my $self = shift;
-        my $elem = shift;
-        return $self->length > $elem->length ? 1 : 0;
+        my $cell = shift;
+        return $self->length > $cell->length ? 1 : 0;
     }
 
 =head1 DESCRIPTION

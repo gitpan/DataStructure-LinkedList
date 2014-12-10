@@ -12,17 +12,17 @@ DataStructure::LinkedList::Iterator - iterator for DataStructure::LinkedList's o
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
+
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
 You can see DataStructure::LinkedList module's SYNOPSIS as a example.
 
 =cut
-
-our $VERSION = '0.01';
 
 =head1 SUBROUTINES/METHODS
 
@@ -54,7 +54,7 @@ sub has_next {
 
 =head2 next
 
-return next cell of the LinkedList.
+return next cell(DataStructure::LinkedList::Cell) of the LinkedList.
 
 =head3 caution
 
