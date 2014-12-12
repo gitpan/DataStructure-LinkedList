@@ -32,10 +32,13 @@
       },
       "runtime" : {
          "requires" : {
+            "Carp" : "1.26",
+            "Class::Accessor" : "0.34",
+            "Scalar::Util" : "1.23",
             "perl" : "5.006"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.02"
+   "version" : "0.03"
 }

@@ -1,5 +1,8 @@
 Revision history for DataStructure-LinkedList
 
+0.03    2014-12-12/22:32
+        error occurred by comparing undef with a number is fixed.
+        add explain Build.PL and Makefile.PL about depending relation of the modules.
 0.02    Date/time
         add pod for DataStructure::LinkedList::Cell.
 0.01    Date/time

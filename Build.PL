@@ -17,9 +17,9 @@ my $builder = Module::Build->new(
     },
     requires => {
         'version' => 0,
-        'Class::Accessor' => 0,
-        'Scalar::Util' => 0,
-        'Carp' => 0,
+        'Class::Accessor' => 0.34,
+        'Scalar::Util' => 1.23,
+        'Carp' => 1.26,
     },
     add_to_cleanup     => [ 'DataStructure-LinkedList-*' ],
     create_makefile_pl => 'traditional',

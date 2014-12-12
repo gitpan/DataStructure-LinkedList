@@ -12,11 +12,11 @@ DataStructure::LinkedList::Iterator - iterator for DataStructure::LinkedList's o
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -49,7 +49,7 @@ If the linkedList has not next cell, this method return 0.
 
 sub has_next {
     my $self = shift;
-    return $self->p->next != undef;
+    return defined $self->p->next;
 }
 
 =head2 next
@@ -71,7 +71,7 @@ So you should generally call has_next method and next method alternately each on
 
 sub next {
     my $self = shift;
-    if ( $self->p->next == undef ) {
+    if ( ! defined($self->p->next) ) {
         return undef;
     }
 
